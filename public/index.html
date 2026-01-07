@@ -1,191 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padma Tejaswi Maramraju | Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Padma Tejaswi Maramraju | Profile Resume</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f6f8;
-            color: #222;
-        }
+<style>
+:root {
+  --primary: #6a11cb;
+  --secondary: #2575fc;
+  --accent: #ff6ec4;
+  --dark: #1e1e2f;
+  --light: #ffffff;
+}
 
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            background: #ffffff;
-            padding: 40px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.08);
-        }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-        h1 {
-            font-size: 34px;
-            margin-bottom: 5px;
-            color: #2c3e50;
-        }
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+  min-height: 100vh;
+  padding: 40px 20px;
+}
 
-        .contact {
-            font-size: 14px;
-            margin-bottom: 25px;
-            color: #555;
-        }
+.container {
+  max-width: 1100px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  border-radius: 25px;
+  padding: 45px;
+  color: var(--light);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.3);
+}
 
-        .contact a {
-            color: #2c3e50;
-            text-decoration: none;
-            margin-right: 10px;
-        }
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
 
-        .section {
-            margin-bottom: 30px;
-        }
+header h1 {
+  font-size: 42px;
+  letter-spacing: 1px;
+}
 
-        .section-title {
-            font-size: 20px;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            color: #2c3e50;
-        }
+header p {
+  margin-top: 12px;
+  font-size: 15px;
+  opacity: 0.9;
+}
 
-        .item-title {
-            font-weight: bold;
-            font-size: 16px;
-        }
+header a {
+  color: #ffd6ff;
+  text-decoration: none;
+  margin: 0 8px;
+}
 
-        .item-subtitle {
-            font-size: 14px;
-            color: #555;
-        }
+section {
+  margin-bottom: 40px;
+}
 
-        ul {
-            margin-top: 8px;
-            padding-left: 20px;
-        }
+.section-title {
+  font-size: 22px;
+  margin-bottom: 18px;
+  position: relative;
+}
 
-        ul li {
-            margin-bottom: 6px;
-            font-size: 14px;
-            line-height: 1.5;
-        }
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+  bottom: -6px;
+  left: 0;
+  border-radius: 10px;
+}
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 12px;
-            font-size: 14px;
-        }
+.card {
+  background: rgba(255,255,255,0.15);
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
 
-        .footer {
-            text-align: center;
-            font-size: 13px;
-            color: #777;
-            margin-top: 40px;
-        }
-    </style>
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.35);
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card span {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.card ul {
+  margin-top: 12px;
+  padding-left: 18px;
+}
+
+.card ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.skill-box {
+  background: rgba(0,0,0,0.25);
+  padding: 18px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
-    <h1>Padma Tejaswi Maramraju</h1>
-    <div class="contact">
-        📞 +91 7396827598 |
-        ✉️ tejaswi0514@gmail.com |
-        <a href="#" target="_blank">LinkedIn</a> |
-        <a href="#" target="_blank">GitHub</a>
-    </div>
+<header>
+  <h1>Padma Tejaswi Maramraju</h1>
+  <p>
+    +91 7396827598 • tejaswi0514@gmail.com •
+    <a href="#">LinkedIn</a> |
+    <a href="#">GitHub</a>
+  </p>
+</header>
 
-    <!-- EDUCATION -->
-    <div class="section">
-        <div class="section-title">Education</div>
-        <div class="item-title">VNR Vignana Jyothi Institute of Engineering and Technology, Hyderabad</div>
-        <div class="item-subtitle">
-            Bachelor of Information Technology (2023 – Present) <br>
-            CGPA: 9.07 / 10.0
-        </div>
-    </div>
+<section>
+  <div class="section-title">Education</div>
+  <div class="card">
+    <h3>VNR Vignana Jyothi Institute of Engineering and Technology, Hyderabad</h3>
+    <span>Bachelor of Information Technology (2023 – Present)</span>
+    <p style="margin-top:10px;">CGPA: <strong>9.08 / 10.0</strong></p>
+  </div>
+</section>
 
-    <!-- EXPERIENCE -->
-    <div class="section">
-        <div class="section-title">Experience</div>
+<section>
+  <div class="section-title">Experience</div>
+  <div class="card">
+    <h3>Product Development Intern — PyroSynergy</h3>
+    <span>June 2025 – November 2025</span>
+    <ul>
+      <li>Optimized React.js UI, reducing load time by 35%.</li>
+      <li>Integrated 15+ secure REST APIs, cutting runtime errors by 25%.</li>
+      <li>Implemented analytics for 1,200+ monthly users, boosting engagement by 20%.</li>
+      <li>Handled full Agile lifecycle and production deployment on Vercel.</li>
+    </ul>
+  </div>
+</section>
 
-        <div class="item-title">Product Development Intern — PyroSynergy</div>
-        <div class="item-subtitle">June 2025 – Present</div>
+<section>
+  <div class="section-title">Technical Skills</div>
+  <div class="skills-grid">
+    <div class="skill-box"><strong>Languages:</strong><br>Python, Java, C, C++, JavaScript, R, SQL</div>
+    <div class="skill-box"><strong>Web:</strong><br>React.js, Node.js, Express.js, TypeScript, HTML5, CSS3</div>
+    <div class="skill-box"><strong>Databases:</strong><br>MongoDB, SQL</div>
+    <div class="skill-box"><strong>Cloud & DevOps:</strong><br>AWS, ECS, Docker, CI/CD, Jenkins, Kubernetes, Vercel</div>
+    <div class="skill-box"><strong>Tools:</strong><br>Tableau, PowerBI, Git, GitHub Actions, Agile</div>
+  </div>
+</section>
 
-        <ul>
-            <li>Engineered and optimized the core user interface using React.js, reducing client-side load time by 35%.</li>
-            <li>Integrated and secured 15+ RESTful APIs using a Node.js backend, reducing frontend runtime errors by 25%.</li>
-            <li>Implemented analytics tracking for 1,200+ monthly users, improving engagement by 20%.</li>
-            <li>Worked in Agile sprints, managing features from design mockups to production deployment on Vercel.</li>
-        </ul>
-    </div>
+<section>
+  <div class="section-title">Projects</div>
 
-    <!-- TECHNICAL SKILLS -->
-    <div class="section">
-        <div class="section-title">Technical Skills</div>
+  <div class="card">
+    <h3>College Seminar Booking System</h3>
+    <ul>
+      <li>JWT-based secure booking system with conflict detection.</li>
+      <li>Automated approval lifecycle with scalable backend.</li>
+      <li><strong>Tech:</strong> React, Node.js, Express, MongoDB, Nodemailer, Cron Jobs</li>
+    </ul>
+  </div>
 
-        <div class="skills-grid">
-            <div><strong>Languages:</strong> Python, Java, C, C++, JavaScript, R, SQL</div>
-            <div><strong>Web:</strong> React.js, Node.js, Express.js, TypeScript, HTML5, CSS3</div>
-            <div><strong>Databases:</strong> MongoDB, SQL</div>
-            <div><strong>DevOps:</strong> Docker, Git, GitHub Actions, Jenkins, Kubernetes</div>
-            <div><strong>Cloud:</strong> AWS, ECS, CI/CD, Vercel</div>
-            <div><strong>Tools:</strong> Tableau, PowerBI, Agile Development, Problem-Solving</div>
-        </div>
-    </div>
+  <div class="card">
+    <h3>PyroSynergy – “Reality Check”</h3>
+    <ul>
+      <li>Business-readiness scoring web application with analytics.</li>
+      <li><strong>Tech:</strong> React, Node.js, MongoDB Atlas, CI/CD</li>
+    </ul>
+  </div>
 
-    <!-- PROJECTS -->
-    <div class="section">
-        <div class="section-title">Projects</div>
+  <div class="card">
+    <h3>Smart Energy Management System</h3>
+    <ul>
+      <li>IoT-based solution for optimized power consumption.</li>
+      <li>Real-time monitoring dashboard.</li>
+      <li><strong>Tech:</strong> React.js, TypeScript</li>
+    </ul>
+  </div>
 
-        <div class="item-title">College Seminar Booking System</div>
-        <ul>
-            <li>Developed an end-to-end auditorium scheduling and booking system.</li>
-            <li>Implemented JWT-based authentication, conflict detection, and lifecycle automation.</li>
-            <li><strong>Tech:</strong> Node.js, Express, React, MongoDB, Nodemailer, Cron Jobs.</li>
-        </ul>
+  <div class="card">
+    <h3>Digital Library System</h3>
+    <ul>
+      <li>Role-based digital platform for e-book management.</li>
+      <li>Secure authentication and efficient search.</li>
+      <li><strong>Tech:</strong> React, Node.js, Express, MongoDB, JWT</li>
+    </ul>
+  </div>
+</section>
 
-        <div class="item-title">PyroSynergy – “Reality Check” (In Development)</div>
-        <ul>
-            <li>Building a business-readiness web application with complex scoring logic and analytics.</li>
-            <li><strong>Tech:</strong> React, Node.js, MongoDB Atlas, CI/CD, Nodemailer.</li>
-        </ul>
+<section>
+  <div class="section-title">Certifications & Leadership</div>
+  <div class="card">
+    <ul>
+      <li>Certifications: Tableau, SQL, Cisco Python, Frontend Development, TypeScript (Infosys)</li>
+      <li>Volunteer – Microsoft Innovation Hub</li>
+      <li>Member – ACM Student Chapter</li>
+      <li>Webathon 3.0 Hackathon – Qualified 2nd Round</li>
+    </ul>
+  </div>
+</section>
 
-        <div class="item-title">Smart Energy Management System</div>
-        <ul>
-            <li>Designed an IoT-based system to optimize power consumption.</li>
-            <li>Developed a real-time monitoring dashboard.</li>
-            <li><strong>Tech:</strong> React.js, TypeScript.</li>
-        </ul>
-
-        <div class="item-title">Digital Library System</div>
-        <ul>
-            <li>Created a role-based digital library for browsing and managing e-books.</li>
-            <li>Focused on secure authentication, efficient search, and seamless UI.</li>
-            <li><strong>Tech:</strong> React, Node.js, Express, MongoDB, JWT.</li>
-        </ul>
-    </div>
-
-    <!-- CERTIFICATIONS & LEADERSHIP -->
-    <div class="section">
-        <div class="section-title">Certifications & Leadership</div>
-
-        <ul>
-            <li><strong>Certifications:</strong> Tableau, SQL, Cisco Python Networking Academy, Frontend Development (OneRoadmap), TypeScript (Infosys).</li>
-            <li><strong>Leadership:</strong> Volunteer – Microsoft Innovation Hub (2023–Present).</li>
-            <li>Member – ACM Student Chapter (2023–Present).</li>
-            <li><strong>Achievements:</strong> Webathon 3.0 Hackathon – Qualified for 2nd round.</li>
-        </ul>
-    </div>
-
-    <div class="footer">
-        © 2026 Padma Tejaswi Maramraju
-    </div>
+<footer>
+  © 2026 Padma Tejaswi Maramraju • Crafted with elegance & innovation
+</footer>
 
 </div>
 
